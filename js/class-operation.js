@@ -1,8 +1,12 @@
 $(function(){
-  $('#add').on('click', function(){
-    $('#target').addClass('sample');
+  $('#toggle').on('click', function(){
+    $('#target').toggleClass('sample');
   });
-  $('#remove').on('click', function(){
-    $('#target').removeClass('sample');
+  $('#has').on('click', function(){
+    if($('#target').hasClass('sample')){
+      console.log('sampleクラスがあります');
+    }else{
+      console.log('sampleクラスがありません')
+    }
   });
 });
